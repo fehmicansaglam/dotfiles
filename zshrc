@@ -1,12 +1,15 @@
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
+ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="crunch"
+
 # Load Autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && source ~/.autojump/etc/profile.d/autojump.zsh ]]
 # sudo apt-get install autojump
 #source /usr/share/autojump/autojump.zsh
 #
-
 [[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh ]]
 #
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
 #Disable Autcorrectur
 unsetopt correct_all
@@ -137,7 +140,8 @@ setopt prompt_subst
 autoload colors; colors;
 export lscolors="gxfxcxdxbxegedabagacad"
 
-PS1="%{$fg[red]%}%B%n%b%{$reset_color%}@%{$fg[blue]%}%B%m%b %{$fg[yellow]%}%B%1~%b %{$reset_color%}%% "
+#PS1="%{$fg[red]%}%B%n%b%{$reset_color%}@%{$fg[blue]%}%B%m%b %{$fg[yellow]%}%B%1~%b %{$reset_color%}%% "
+export PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 # PLUGIN
 
@@ -225,3 +229,8 @@ alias x=extract
 fpath=($ZSH/plugins/extract $fpath)
 autoload -U compinit
 compinit -i
+
+plugins=(git brew git-flow github heroku rvm sublime)
+
+source $ZSH/oh-my-zsh.sh
+
