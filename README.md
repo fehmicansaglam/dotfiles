@@ -5,7 +5,7 @@ All vim plugins are added as a git submodule.
 
 Install:
 
-    git clone --recursive https://github.com/canavar/dotfiles.git
+    git clone --recursive https://github.com/fehmicansaglam/dotfiles.git
     cd dotfiles
     make
 
