@@ -8,6 +8,8 @@
     br = branch
     co = checkout
     cod = checkout develop
+    ps = push
+    pl = pull
     di = diff
     dic = diff --cached
     lg = log -p
