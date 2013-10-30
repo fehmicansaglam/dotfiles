@@ -51,6 +51,6 @@ bind-key -t vi-copy 'y' copy-selection
 #bind-key C-y save-buffer /tmp/tmux-buffer \; run-shell "cat /tmp/tmux-buffer | xclip"
 bind-key y save-buffer /tmp/tmux-buffer \; run-shell "cat /tmp/tmux-buffer | xclip"
 
-
+source '/home/fcs/canavARGE/powerline/powerline/bindings/tmux/powerline.conf'
 
 

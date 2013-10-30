@@ -308,3 +308,6 @@ endif
 
 " powerline
 let g:Powerline_symbols = 'fancy'
+
+set rtp+=/home/fcs/canavARGE/powerline/powerline/bindings/vim
+
