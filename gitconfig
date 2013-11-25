@@ -19,6 +19,11 @@
     rhh = reset --hard HEAD
 # Show files ignored by git:
     ign = ls-files -o -i --exclude-standard
+    ffs = flow feature start
+    fff = flow feature finish
+    ffps = flow feature publish
+    ffpl = flow feature pull
+    ffc = flow feature checkout
 
 [color]
     ui = auto
