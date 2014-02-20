@@ -1,6 +1,6 @@
 [user]
-	name = Fehmi Can Saglam
-	email = fehmican.saglam@gmail.com
+    name = Fehmi Can Saglam
+    email = fehmican.saglam@gmail.com
 [alias]
     st = status
     ci = commit

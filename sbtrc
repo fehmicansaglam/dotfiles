@@ -1,0 +1,15 @@
+alias cc=;clean;compile
+alias ct=;clean;test
+alias rct=;reload;clean;test
+alias c=compile
+alias t=test
+alias to=test-only
+alias up=update
+alias re=reload
+alias reup=;reload;update
+alias q=exit
+alias e=eclipse
+alias gs=gen-sublime
+alias cl=clean
+alias tc=test:compile
+alias cd=project
