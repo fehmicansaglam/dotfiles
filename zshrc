@@ -1,3 +1,7 @@
+ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="in-fino-veritas"
+
 # Set locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -229,3 +233,6 @@ alias x=extract
 fpath=($ZSH/plugins/extract $fpath)
 autoload -U compinit
 compinit -i
+
+source $ZSH/oh-my-zsh.sh
+
